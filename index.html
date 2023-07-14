@@ -1,79 +1,202 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <!-- Page setup -->
     <meta charset="utf-8">
-    <title>Relatório Estágio</title>
+    <title>Relatorio de Estagio - Luís Oliveira</title>
     <meta name="description" content="A brief description of your site for search engines">
     <meta name="author" content="Information about the author here">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="icon" type="image/png" href="favicon.png">
-  
+
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     <!-- Custom styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
-
+    <style>
+        /* New styles for a modern look */
+        /* Set a modern font */
+        
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+        /* Header styles */
+        
+        header {
+            background: #333;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        header img {
+            max-height: 40px;
+            margin-right: 10px;
+        }
+        /* Menu styles */
+        
+        .main-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .main-menu li {
+            margin-right: 20px;
+        }
+        
+        .main-menu li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .main-menu li a:hover {
+            color: #EF6D3D;
+        }
+        /* Content styles */
+        
+        .content-region {
+            margin-top: 30px;
+        }
+        /* Footer styles */
+        
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
-  </head>
-  
-  <body>
+
+</head>
+
+<body>
 
     <header id="header">
-      <img src="logo.jpg">
-      <h1>Teste</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
+        <img src="logo.png" alt="Logo">
+        <h1>Docker</h1>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Trabalho desenvolvido</a></li>
+                <li><a href="#enquadramento">Enquadramento</a></li>
+                <li><a href="#contact">Contactos</a></li>
+                <li><a href="#documents">Documentos</a></li>
+            </ul>
+        </nav>
     </header>
-   
+
     <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/cpl-makerlab/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
-          </div>
-          
+        <div class="inner">
+            <div id="content">
+
+                <div id="home" class="content-region hide">
+                    <h2 class="centered-heading">Descrição</h2>
+                    <p>
+                        Este site tem como objetivo fornecer uma descrição resumida do estágio curricular realizado por Lara Figueiredo na ITsector, como conclusão do 3º ano do curso de Engenharia Informática.
+                    </p>
+                </div>
+
+                <div id="about" class="content-region hide" style="background-color: white;">
+                    <h2 class="centered-heading">Trabalho desenvolvido</h2>
+                    <p style="text-align: justify;background-color: white;">
+                        O estágio cumpre o requisito da unidade curricular de Projeto de Engenharia Informática em Contexto Empresarial, do terceiro ano da licenciatura em Engenharia Informática do Instituto Superior Politécnico Gaya (ISPGAYA). O objetivo é relatar a implementação
+                        de um processo de testes automatizados de software, visando aumentar a confiabilidade do software e criar uma cobertura de testes de API, que antes era realizada, apenas, manualmente. Para alcançar tais objetivos, utilizou-se a
+                        biblioteca RestAssured do Java, uma ferramenta que integra a mesma stack de tecnologias utilizadas no projeto, JAVA. A implementação dos testes automatizados resultou num considerável aumento na cobertura dos testes, permitindo
+                        uma validação mais eficiente e frequente do software em desenvolvimento. Isso possibilitou a identificação e correção antecipada de problemas, contribuindo para a qualidade do software final. Com o processo de testes automatizados,
+                        a equipa foi capaz de detetar falhas com maior agilidade, reduzindo o tempo necessário para as correções e melhorando a entrega do produto. A introdução desta prática no projeto, promoveu uma maior confiabilidade no software, além
+                        de otimizar os esforços da equipe de desenvolvimento, tornando o processo mais eficiente e seguro.
+                        <span style="background-color: white;">O projeto de automação de testes trouxe benefícios significativos para a equipe, como a redução de erros, maior agilidade nos processos de teste e aumento da confiabilidade do software. Com a implementação bem-sucedida da automação de testes, foi possível otimizar o tempo e esforço da equipe, permitindo que eles se concentrassem em atividades mais estratégicas e de maior valor agregado.</span>
+                    </p>
+                </div>
+
+                <div id="enquadramento" class="content-region hide">
+                    <p style="text-align: justify">
+                        Lara é atualmente estudante do 3º ano de Engenharia Informática e colaboradora da ITSector, onde desempenha o papel de Tester de Software. Sua principal área de atuação envolve testes funcionais, manuais e mobile.</p>
+
+                </div>
+
+
+
+
+                <div id="contact" class="content-region hide">
+                    <p>
+                        <i class="fas fa-phone"></i> <a href="tel:910475118">Telemóvel: 910475118</a>
+                        <br>
+                        <i class="fas fa-envelope"></i> <a href="mailto:ispg2020102573@ispgaya.pt">Email: ispg2020102573@ispgaya.pt</a>
+                    </p>
+                </div>
+
+
+                <div id="documents" class="content-region hide">
+                    <h2 class="centered-heading">Relatório Final</h2>
+                    <p>
+                        O relatório sobre o trabalho desenvolvido pode ser consultado em:
+                        <a href="https://drive.google.com/file/d/16nBfdRNViXdGPFJwPovBEQddmBGgFGR8/view" target="_blank">Relatório Final</a>
+                    </p>
+
+                </div>
+
+            </div>
         </div>
-      </div>
     </div>
 
-    <footer>  
-      Footer region
+    <footer>
+        <p>&copy; 2023 Lara Figueiredo - Estágio Curricular ITSector.</p>
     </footer>
-    
+
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+    <script>
+        // Wait for the document to load before running the script 
+        (function($) {
+
+            // We use some Javascript and the URL #fragment to hide/show different parts of the page
+            // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_element_on_the_same_page
+            $(window).on('load hashchange', function() {
+
+                // First hide all content regions, then show the content-region specified in the URL hash 
+                // (or if no hash URL is found, default to first menu item)
+                $('.content-region').hide();
+
+                // Remove any active classes on the main-menu
+                $('.main-menu a').removeClass('active');
+                var region = location.hash.toString() || $('.main-menu a:first').attr('href');
+
+                // Now show the region specified in the URL hash
+                $(region).show();
+
+                // Highlight the menu link associated with this region by adding the .active CSS class
+                $('.main-menu a[href="' + region + '"]').addClass('active');
+
+                // Alternate method: Use AJAX to load the contents of an external file into a div based on URL fragment
+                // This will extract the region name from URL hash, and then load [region].html into the main #content div
+                // var region = location.hash.toString() || '#first';
+                // $('#content').load(region.slice(1) + '.html')
+
+            });
+
+        })(jQuery);
+    </script>
+
+</body>
+
 </html>
